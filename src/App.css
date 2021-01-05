@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.legend {
+  position: absolute;
+  z-index: 1000;
+  top: 67vh;
+  left: 0.5%;
+  width: 170px;
+  height: 280px;
+  background-color: rgb(63, 60, 60);
+  padding-top: 1%;
+  border-radius: 5px;
+  opacity: 0.7;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(211, 202, 202);
+}
+
+.legendTitle {
+  position: absolute;
+  top: 67.5vh;
+  left: 0.8%;
+  z-index: 1200;
+  color: rgb(211, 202, 202);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.legendHighest {
+  position: absolute;
+  z-index: 1000;
+  left: 35%;
+  top: 4.3vh;
+}
+.legendMidHigh {
+  position: absolute;
+  z-index: 1000;
+  left: 35%;
+  top: 10.8vh;
+}
+
+.legendMidLow {
+  position: absolute;
+  z-index: 1000;
+  left: 35%;
+  top: 18.5vh;
+}
+
+.legendLowest {
+  position: absolute;
+  z-index: 1000;
+  left: 35%;
+  top: 26.2vh;
+}
+
+.gradientConfirmed {
+  position: absolute;
+  z-index: 1000;
+  width: 40px;
+  height: 220px;
+  top: 72vh;
+  left: 1%;
+  border-radius: 3px;
+  background-image: linear-gradient(#680c0d, #7e3121, #955535, #ab7a4a, #c29f5e, #d8c372, #efe886);
+}
+
+.gradientDeaths {
+  position: absolute;
+  z-index: 1000;
+  width: 40px;
+  height: 220px;
+  top: 72vh;
+  left: 1%;
+  border-radius: 3px;
+  background-image: linear-gradient(#004625, #2b6541, #55845d, #80a278, #aac194, #d4e0b0, #ffffcc);
+}
+
+.gradientDeathRate {
+  position: absolute;
+  z-index: 1000;
+  width: 40px;
+  height: 220px;
+  top: 72vh;
+  left: 1%;
+  border-radius: 3px;
+  background-image: linear-gradient(#1a3a46, #30555f, #467078, #6c8e94, #87aaae, #a3c6c8, #bee2e2);
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
