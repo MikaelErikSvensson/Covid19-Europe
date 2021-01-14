@@ -7,14 +7,12 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
 import Button from '@material-ui/core/Button';
 import ConfirmedCases from './components/ConfirmedCases';
 import CasesPerCapita from './components/CasesPerCapita';
 import Deaths from './components/Deaths';
 import DeathRate from './components/DeathRate';
 import About from './components/About';
-import Popup from './components/Popup';
 import Loading from './components/Loading';
 import { parseCovidCountryData, addCountryColors } from './utils/arrayUtils';
 import { getCovidData, useStylesAppBar } from './utils/otherUtils';
@@ -33,32 +31,30 @@ function App() {
   const classes = useStylesAppBar();
   return (
     <Router>
-      <Popup />
-      <Navbar bg="dark" expand="xl" variant="dark">
-        <Navbar.Brand id="headerBrand" href="">
-          COVID-19 Europe
-        </Navbar.Brand>
-        <Navbar.Toggle className="headerToggle" aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="text-center">
-            <Button component={Link} to={'/confirmed_cases'} id="navButton">
+      <div className={classes.root}>
+        <AppBar style={{ background: '#292b2c' }} position="static">
+          <Toolbar>
+            <Typography variant="h6" className={classes.title}>
+              Covid-19 Europe
+            </Typography>
+            <Button component={Link} to={'/confirmed_cases'} color="inherit">
               Confirmed Cases
             </Button>
-            <Button component={Link} to={'/cases_per_capita'} id="navButton">
+            <Button component={Link} to={'/cases_per_capita'} color="inherit">
               Cases Per Capita
             </Button>
-            <Button component={Link} to={'/deaths'} id="navButton">
+            <Button component={Link} to={'/deaths'} color="inherit">
               Deaths
             </Button>
-            <Button component={Link} to={'/death_rate'} id="navButton">
+            <Button component={Link} to={'/death_rate'} color="inherit">
               Death Rate
             </Button>
-            <Button component={Link} to={'/about'} id="navButton">
+            <Button component={Link} to={'/about'} color="inherit">
               About
             </Button>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+          </Toolbar>
+        </AppBar>
+      </div>
       {typeof coloredCountries !== 'undefined' ? (
         <Switch>
           <Route exact path="/">

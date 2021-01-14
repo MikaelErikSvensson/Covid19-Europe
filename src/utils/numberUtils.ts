@@ -12,8 +12,3 @@ export const findMax = (array: Country[], f: (x: Country) => number) => {
   const result = array.map(f);
   return result.reduce((acc, curr) => (acc > curr ? acc : curr), 0);
 };
-
-export const findMin = (array: Country[], f: (x: Country) => number) => {
-  const result = array.map(f);
-  return result.reduce((acc, curr) => (acc < curr ? acc : curr));
-};

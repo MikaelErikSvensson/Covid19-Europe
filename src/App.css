@@ -1,5 +1,46 @@
-.App {
+#headerBrand {
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(209, 207, 207);
+  padding-right: 1%;
+}
+
+.headerBrand:hover {
+  text-decoration: none;
+}
+
+#navButton {
+  color: rgb(255, 255, 255);
+  font-weight: 530;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#navButton:hover {
+  text-decoration: none;
+  color: #b9b0b0;
+  font-weight: 700;
+}
+
+#popupButton {
+  width: 130px;
+  margin: 15px;
+}
+
+#about {
   text-align: center;
+  padding-top: 2%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  z-index: 1000;
+  height: 3vh;
+  width: 100%;
+  background-color: #292b2c;
+  text-align: center;
+  color: white;
 }
 
 .legend {
@@ -63,7 +104,18 @@
   top: 72vh;
   left: 1%;
   border-radius: 3px;
-  background-image: linear-gradient(#680c0d, #7e3121, #955535, #ab7a4a, #c29f5e, #d8c372, #efe886);
+  background-image: linear-gradient(#680c0d, #7e3121, #955535, #ab7a4a, #c29f5e, #d8c372, #efe886, #ffffff);
+}
+
+.gradientPerCapita {
+  position: absolute;
+  z-index: 1000;
+  width: 40px;
+  height: 220px;
+  top: 72vh;
+  left: 1%;
+  border-radius: 3px;
+  background-image: linear-gradient(#680c0d, #7e3121, #955535, #ab7a4a, #c29f5e, #d8c372, #efe886, #ffffff);
 }
 
 .gradientDeaths {
@@ -74,7 +126,7 @@
   top: 72vh;
   left: 1%;
   border-radius: 3px;
-  background-image: linear-gradient(#004625, #2b6541, #55845d, #80a278, #aac194, #d4e0b0, #ffffcc);
+  background-image: linear-gradient(#004625, #2b6541, #55845d, #80a278, #aac194, #d4e0b0, #ffffcc, #ffffff);
 }
 
 .gradientDeathRate {
@@ -85,7 +137,7 @@
   top: 72vh;
   left: 1%;
   border-radius: 3px;
-  background-image: linear-gradient(#1a3a46, #30555f, #467078, #6c8e94, #87aaae, #a3c6c8, #bee2e2);
+  background-image: linear-gradient(#1a3a46, #30555f, #467078, #6c8e94, #87aaae, #a3c6c8, #bee2e2, #ffffff);
 }
 
 #loader {

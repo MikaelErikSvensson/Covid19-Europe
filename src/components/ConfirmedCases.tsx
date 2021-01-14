@@ -1,19 +1,10 @@
 import 'leaflet/dist/leaflet.css';
 import { ColoredCountry, Country, MapProps } from '../types/main';
-import { findMax, findMin, formatNumbers } from '../utils/numberUtils';
+import { findMax, formatNumbers } from '../utils/numberUtils';
 import RenderMap from './RenderMap';
 
 const ConfirmedCases = ({ coloredCountries }: MapProps) => {
-  const max = findMax(coloredCountries, (x: Country) => {
-    // Detta ska ändras, importera maxConfirmed el. likande istället direkt i html
-    if (Number.isNaN(x.confirmed)) {
-      return 0;
-    } else {
-      return x.confirmed;
-    }
-  });
-
-  const min = findMin(coloredCountries, (x: Country) => {
+  const maxConfirmed = findMax(coloredCountries, (x: Country) => {
     if (Number.isNaN(x.confirmed)) {
       return 0;
     } else {
@@ -41,9 +32,9 @@ const ConfirmedCases = ({ coloredCountries }: MapProps) => {
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
       <div className="legendTitle">Confirmed Cases</div>
       <div className="legend">
-        <div className="legendHighest"> - {formatNumbers(max)} </div>
-        <div className="legendMidHigh"> - {formatNumbers(Math.floor((max / 4) * 2))}</div>
-        <div className="legendMidLow"> - {formatNumbers(Math.floor(max / 4))}</div>
+        <div className="legendHighest"> - {formatNumbers(maxConfirmed)} </div>
+        <div className="legendMidHigh"> - {formatNumbers(Math.floor((maxConfirmed / 4) * 2))}</div>
+        <div className="legendMidLow"> - {formatNumbers(Math.floor(maxConfirmed / 4))}</div>
         <div className="legendLowest"> - 0</div>
       </div>
       <div className="gradientConfirmed"></div>

@@ -4,7 +4,7 @@ import { findMax, formatNumbers } from '../utils/numberUtils';
 import RenderMap from './RenderMap';
 
 const Deaths = ({ coloredCountries }: MapProps) => {
-  const max = findMax(coloredCountries, (x: Country) => {
+  const maxConfirmed = findMax(coloredCountries, (x: Country) => {
     if (Number.isNaN(x.deaths)) {
       return 0;
     } else {
@@ -30,12 +30,12 @@ const Deaths = ({ coloredCountries }: MapProps) => {
   return (
     <div>
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
-      <div className="legendTitle">Deaths</div>
+      <div className="legendTitle">Confirmed Cases</div>
       <div className="legend">
-        <div className="legendHighest"> - {formatNumbers(max)} </div>
-        <div className="legendMidHigh"> - {formatNumbers(Math.floor((max / 4) * 2))}</div>
-        <div className="legendMidLow"> - {formatNumbers(Math.floor(max / 4))}</div>
-        <div className="legendLowest"> - 0</div>
+        <div className="legendHighest"> - {formatNumbers(maxConfirmed)} </div>
+        <div className="legendMidHigh"> - {formatNumbers(Math.floor((maxConfirmed / 4) * 2))}</div>
+        <div className="legendMidLow"> - {formatNumbers(Math.floor(maxConfirmed / 4))}</div>
+        <div className="legendLowest"> - {formatNumbers(0)}</div>
       </div>
       <div className="gradientDeaths"></div>
     </div>

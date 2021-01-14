@@ -35,9 +35,9 @@ const CasesPerCapita = ({ coloredCountries }: MapProps) => {
         <div className="legendHighest"> - {formatPercentage(max)} </div>
         <div className="legendMidHigh"> - {formatPercentage(Math.floor((max / 4) * 2))} </div>
         <div className="legendMidLow"> - {formatPercentage(Math.floor(max / 4))} </div>
-        <div className="legendLowest"> - 0 </div>
+        <div className="legendLowest"> - {formatPercentage(0)}</div>
       </div>
-      <div className="gradientConfirmed"></div>
+      <div className="gradientPerCapita"></div>
     </div>
   );
 };
