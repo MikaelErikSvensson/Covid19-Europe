@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
 import { Navbar, Nav } from 'react-bootstrap';
-
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-
 import Button from '@material-ui/core/Button';
 import ConfirmedCases from './components/ConfirmedCases';
 import CasesPerCapita from './components/CasesPerCapita';
@@ -17,7 +11,7 @@ import About from './components/About';
 import Popup from './components/Popup';
 import Loading from './components/Loading';
 import { parseCovidCountryData, addCountryColors } from './utils/arrayUtils';
-import { getCovidData, useStylesAppBar } from './utils/otherUtils';
+import { getCovidData } from './utils/otherUtils';
 import { ColoredCountry } from './types/main';
 import { countryPolygons, covidDataUrl, countryPopulations } from './utils/otherUtils';
 
@@ -30,7 +24,6 @@ function App() {
       setColoredCountries(addCountryColors(parsedResult));
     });
   }, []);
-  const classes = useStylesAppBar();
   return (
     <Router>
       <Popup />

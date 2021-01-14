@@ -1,6 +1,3 @@
-import React from 'react';
-import Footer from './Footer';
-
 const About = () => {
   return (
     <div id="about">
@@ -18,7 +15,7 @@ const About = () => {
         The maps have been generalized to accomodate for the fact that the COVID-19 data are based on the mainlands of respective country.
         Many small islands are not included as a result.
       </p>
-      <Footer />
+      <div className="footer">&copy; {new Date().getFullYear()} Copyright: Mikael Erik Svensson</div>
     </div>
   );
 };
