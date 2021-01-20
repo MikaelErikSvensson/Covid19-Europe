@@ -38,6 +38,9 @@ const ConfirmedCases = ({ coloredCountries }: MapProps) => {
         <div className="legendLowest"> - 0</div>
       </div>
       <div className="gradientConfirmed"></div>
+      <div className="mapFooter">
+        Confirmed Cases<div className="gradientConfirmedNew"></div>
+      </div>
     </div>
   );
 };

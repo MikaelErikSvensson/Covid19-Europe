@@ -4,7 +4,7 @@ import { countryStyle, mapUrl } from '../utils/otherUtils';
 
 const RenderMap = ({ coloredCountries, onEachCountry }) => {
   return (
-    <MapContainer style={{ height: '93.95vh' }} zoom={4} minZoom={3} center={[57, 27]}>
+    <MapContainer style={{ height: '93.95vh' }} zoom={4} minZoom={3} center={[53.5, 27]}>
       <GeoJSON style={countryStyle} data={coloredCountries} onEachFeature={onEachCountry} />
       <TileLayer
         url={mapUrl}

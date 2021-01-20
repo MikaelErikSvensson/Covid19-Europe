@@ -30,7 +30,7 @@ const Deaths = ({ coloredCountries }: MapProps) => {
   return (
     <div>
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
-      <div className="legendTitle">Confirmed Cases</div>
+      <div className="legendTitle">Deaths</div>
       <div className="legend">
         <div className="legendHighest"> - {formatNumbers(maxConfirmed)} </div>
         <div className="legendMidHigh"> - {formatNumbers(Math.floor((maxConfirmed / 4) * 2))}</div>
