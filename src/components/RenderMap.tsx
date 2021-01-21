@@ -4,12 +4,9 @@ import { countryStyle, mapUrl } from '../utils/otherUtils';
 
 const RenderMap = ({ coloredCountries, onEachCountry }) => {
   return (
-    <MapContainer style={{ height: '93.95vh' }} zoom={3} minZoom={2} center={[53.5, 20]}>
+    <MapContainer style={{ height: '80vh' }} zoom={3} minZoom={2} center={[53.5, 20]}>
       <GeoJSON style={countryStyle} data={coloredCountries} onEachFeature={onEachCountry} />
-      <TileLayer
-        url={mapUrl}
-        attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
-      />
+      <TileLayer url={mapUrl} />
     </MapContainer>
   );
 };

@@ -27,7 +27,7 @@ function App() {
   return (
     <Router>
       <Popup />
-      <Navbar bg="dark" expand="xl" variant="dark">
+      <Navbar sticky="top" bg="dark" expand="xl" variant="dark">
         <Navbar.Brand id="headerBrand" href="">
           COVID-19 Europe
         </Navbar.Brand>
