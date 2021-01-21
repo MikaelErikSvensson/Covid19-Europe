@@ -22,7 +22,8 @@ function Popup() {
           <Modal.Title>Information</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          This website is intended to give an overview of the COVID-19 situation in Europe. Mouseover a specific country for exact numbers.
+          This website is intended to give an overview of the COVID-19 situation in Europe. Mouseover or click on a specific country for
+          exact numbers.
         </Modal.Body>
         <Button id="popupButton" variant="success" onClick={handleClose}>
           OK

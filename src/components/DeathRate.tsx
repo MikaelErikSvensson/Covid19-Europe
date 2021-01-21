@@ -31,7 +31,7 @@ const DeathRate = ({ coloredCountries }: MapProps) => {
     <div>
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
       <div className="legend">
-        Death Rate<div className="gradientPerCapita"></div>
+        Death Rate<div className="gradientDeathRate"></div>
         <div className="legendBar"></div>
         <div className="legendBar2"></div>
         <div className="legendBar3"></div>

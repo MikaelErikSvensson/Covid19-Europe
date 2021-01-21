@@ -3,7 +3,7 @@ const About = () => {
     <div id="about">
       <h1>Data</h1>
       <p>
-        Data regarding COVID-19 was retrieved from{' '}
+        COVID-19 data was retrieved from{' '}
         <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins University, Center for Systems Science and Engineering.</a> The
         data is updated continuously.
       </p>

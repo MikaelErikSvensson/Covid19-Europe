@@ -52,7 +52,7 @@ body {
   z-index: -1000;
   bottom: 0%;
   z-index: 1000;
-  height: 12vh;
+  height: 14vh;
   width: 100%;
   background-color: #4e5357;
   opacity: 0.98;
@@ -106,7 +106,7 @@ body {
   position: absolute;
   z-index: 1000;
   left: 6%;
-  top: 20%;
+  top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
   font-size: 1.3vh;
@@ -116,7 +116,7 @@ body {
   position: absolute;
   z-index: 1000;
   left: 30.9%;
-  top: 20%;
+  top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
   font-size: 1.3vh;
@@ -126,7 +126,7 @@ body {
   position: absolute;
   z-index: 1000;
   left: 59.2%;
-  top: 20%;
+  top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
   font-size: 1.3vh;
@@ -137,7 +137,7 @@ body {
   position: absolute;
   z-index: 1000;
   left: 87.5%;
-  top: 20%;
+  top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
   font-size: 1.3vh;

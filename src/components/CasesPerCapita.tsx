@@ -31,7 +31,8 @@ const CasesPerCapita = ({ coloredCountries }: MapProps) => {
     <div>
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
       <div className="legend">
-        Cases Per Capita<div className="gradientPerCapita"></div>
+        Cases Per Capita<br></br>
+        <div className="gradientPerCapita"></div>
         <div className="legendBar"></div>
         <div className="legendBar2"></div>
         <div className="legendBar3"></div>
