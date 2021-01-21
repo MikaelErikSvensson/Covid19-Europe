@@ -30,16 +30,16 @@ const ConfirmedCases = ({ coloredCountries }: MapProps) => {
   return (
     <div>
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
-      <div className="legendTitle">Confirmed Cases</div>
       <div className="legend">
-        <div className="legendHighest"> - {formatNumbers(maxConfirmed)} </div>
-        <div className="legendMidHigh"> - {formatNumbers(Math.floor((maxConfirmed / 4) * 2))}</div>
-        <div className="legendMidLow"> - {formatNumbers(Math.floor(maxConfirmed / 4))}</div>
-        <div className="legendLowest"> - 0</div>
-      </div>
-      <div className="gradientConfirmed"></div>
-      <div className="mapFooter">
-        Confirmed Cases<div className="gradientConfirmedNew"></div>
+        Confirmed Cases<div className="gradientConfirmed"></div>
+        <div className="legendBar"></div>
+        <div className="legendBar2"></div>
+        <div className="legendBar3"></div>
+        <div className="legendBar4"></div>
+        <div className="legendHighest">{formatNumbers(maxConfirmed)} </div>
+        <div className="legendMidHigh">{formatNumbers(Math.floor((maxConfirmed / 4) * 2))}</div>
+        <div className="legendMidLow">{formatNumbers(Math.floor(maxConfirmed / 4))}</div>
+        <div className="legendLowest">0</div>
       </div>
     </div>
   );

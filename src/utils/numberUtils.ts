@@ -5,7 +5,7 @@ export const formatNumbers = (number: number) => {
 };
 
 export const formatPercentage = (number: number) => {
-  return number.toString() + '%';
+  return number.toFixed(2) + '%';
 };
 
 export const findMax = (array: Country[], f: (x: Country) => number) => {

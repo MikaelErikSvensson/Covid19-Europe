@@ -30,14 +30,17 @@ const DeathRate = ({ coloredCountries }: MapProps) => {
   return (
     <div>
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
-      <div className="legendTitle">Death Rate</div>
       <div className="legend">
-        <div className="legendHighest"> - {formatPercentage(max)} </div>
-        <div className="legendMidHigh"> - {formatPercentage(Math.floor((max / 4) * 2))} </div>
-        <div className="legendMidLow"> - {formatPercentage(Math.floor(max / 4))} </div>
-        <div className="legendLowest"> - {formatPercentage(0)}</div>
+        Death Rate<div className="gradientPerCapita"></div>
+        <div className="legendBar"></div>
+        <div className="legendBar2"></div>
+        <div className="legendBar3"></div>
+        <div className="legendBar4"></div>
+        <div className="legendHighest">{formatPercentage(max)} </div>
+        <div className="legendMidHigh">{formatPercentage((max / 4) * 2)} </div>
+        <div className="legendMidLow">{formatPercentage(max / 4)} </div>
+        <div className="legendLowest">{formatPercentage(0)}</div>
       </div>
-      <div className="gradientDeathRate"></div>
     </div>
   );
 };

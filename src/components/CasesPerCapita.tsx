@@ -30,14 +30,17 @@ const CasesPerCapita = ({ coloredCountries }: MapProps) => {
   return (
     <div>
       <RenderMap coloredCountries={coloredCountries} onEachCountry={onEachCountry} />
-      <div className="legendTitle">Cases Per Capita</div>
       <div className="legend">
-        <div className="legendHighest"> - {formatPercentage(max)} </div>
-        <div className="legendMidHigh"> - {formatPercentage(Math.floor((max / 4) * 2))} </div>
-        <div className="legendMidLow"> - {formatPercentage(Math.floor(max / 4))} </div>
-        <div className="legendLowest"> - {formatPercentage(0)}</div>
+        Cases Per Capita<div className="gradientPerCapita"></div>
+        <div className="legendBar"></div>
+        <div className="legendBar2"></div>
+        <div className="legendBar3"></div>
+        <div className="legendBar4"></div>
+        <div className="legendHighest">{formatPercentage(max)} </div>
+        <div className="legendMidHigh">{formatPercentage((max / 4) * 2)} </div>
+        <div className="legendMidLow">{formatPercentage(max / 4)} </div>
+        <div className="legendLowest">{formatPercentage(0)}</div>
       </div>
-      <div className="gradientPerCapita"></div>
     </div>
   );
 };
