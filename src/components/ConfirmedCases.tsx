@@ -2,8 +2,16 @@ import 'leaflet/dist/leaflet.css';
 import { ColoredCountry, Country, MapProps } from '../types/main';
 import { findMax, formatNumbers } from '../utils/numberUtils';
 import RenderMap from './RenderMap';
+import { Modal, Button } from 'react-bootstrap';
+import { HiInformationCircle } from 'react-icons/hi';
+import { useState } from 'react';
 
 const ConfirmedCases = ({ coloredCountries }: MapProps) => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const maxConfirmed = findMax(coloredCountries, (x: Country) => {
     if (Number.isNaN(x.confirmed)) {
       return 0;
@@ -40,6 +48,20 @@ const ConfirmedCases = ({ coloredCountries }: MapProps) => {
         <div className="legendMidHigh">{formatNumbers(Math.floor((maxConfirmed / 4) * 2))}</div>
         <div className="legendMidLow">{formatNumbers(Math.floor(maxConfirmed / 4))}</div>
         <div className="legendLowest">0</div>
+        <button className="infoButton" onClick={handleShow}>
+          <HiInformationCircle size={18} />
+        </button>
+        <Modal show={show} onHide={handleClose} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>Information</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>This map displays how many people have been infected by covid-19 per country.</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </div>
   );

@@ -105,7 +105,7 @@ body {
 .legendLowest {
   position: absolute;
   z-index: 1000;
-  left: 6%;
+  left: 6.5%;
   top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
@@ -115,7 +115,7 @@ body {
 .legendMidLow {
   position: absolute;
   z-index: 1000;
-  left: 30.9%;
+  left: 31.5%;
   top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
@@ -125,7 +125,7 @@ body {
 .legendMidHigh {
   position: absolute;
   z-index: 1000;
-  left: 59.2%;
+  left: 60%;
   top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
@@ -136,7 +136,7 @@ body {
 .legendHighest {
   position: absolute;
   z-index: 1000;
-  left: 87.5%;
+  left: 88%;
   top: 25%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
@@ -189,6 +189,19 @@ body {
   bottom: 5%;
   border-radius: 3px;
   background-image: linear-gradient(to left, #1a3a46, #30555f, #467078, #6c8e94, #87aaae, #a3c6c8, #bee2e2, #ffffff);
+}
+
+.infoButton {
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+.infoButton:focus {
+  border: none;
+  background-color: transparent;
+  outline: 0;
 }
 
 #loader {
