@@ -40,12 +40,8 @@ const Deaths = ({ coloredCountries }: MapProps) => {
       <div className="legend">
         Deaths<div className="gradientDeaths"></div>
         <div className="legendBar"></div>
-        <div className="legendBar2"></div>
-        <div className="legendBar3"></div>
         <div className="legendBar4"></div>
         <div className="legendHighest">{formatNumbers(maxConfirmed)} </div>
-        <div className="legendMidHigh">{formatNumbers(Math.floor((maxConfirmed / 4) * 2))}</div>
-        <div className="legendMidLow">{formatNumbers(Math.floor(maxConfirmed / 4))}</div>
         <div className="legendLowest">0</div>
         <button className="infoButton" onClick={handleShow}>
           <HiInformationCircle size={18} />

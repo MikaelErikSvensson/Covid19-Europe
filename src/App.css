@@ -52,12 +52,12 @@ body {
   z-index: -1000;
   bottom: 0%;
   z-index: 1000;
-  height: 14vh;
+  height: 10vh;
   width: 100%;
   background-color: #4e5357;
   opacity: 0.98;
   text-align: center;
-  font-size: 15x;
+  font-size: 20px;
   font-weight: 700;
   color: rgb(211, 202, 202);
 }
@@ -65,7 +65,7 @@ body {
 .legendBar {
   position: absolute;
   z-index: 1000;
-  left: 7.5%;
+  left: 20%;
   top: 45%;
   width: 0.3vh;
   height: 50%;
@@ -95,7 +95,7 @@ body {
 .legendBar4 {
   position: absolute;
   z-index: 1000;
-  left: 92.5%;
+  left: 80%;
   top: 45%;
   width: 0.3vh;
   height: 50%;
@@ -105,42 +105,44 @@ body {
 .legendLowest {
   position: absolute;
   z-index: 1000;
-  left: 6.5%;
-  top: 25%;
+  left: 17%;
+  top: 60%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
-  font-size: 1.3vh;
-  font-weight: bold;
-}
-.legendMidLow {
-  position: absolute;
-  z-index: 1000;
-  left: 31.5%;
-  top: 25%;
-  color: white;
-  text-shadow: 2px 2px #3b3b3b;
-  font-size: 1.3vh;
-  font-weight: bold;
-}
-.legendMidHigh {
-  position: absolute;
-  z-index: 1000;
-  left: 60%;
-  top: 25%;
-  color: white;
-  text-shadow: 2px 2px #3b3b3b;
-  font-size: 1.3vh;
+  font-size: 1.7vh;
   font-weight: bold;
 }
 
 .legendHighest {
   position: absolute;
   z-index: 1000;
-  left: 88%;
-  top: 25%;
+  left: 82%;
+  top: 60%;
   color: white;
   text-shadow: 2px 2px #3b3b3b;
-  font-size: 1.3vh;
+  font-size: 1.7vh;
+  font-weight: bold;
+}
+
+.legendLowestPercent {
+  position: absolute;
+  z-index: 1000;
+  left: 10%;
+  top: 60%;
+  color: white;
+  text-shadow: 2px 2px #3b3b3b;
+  font-size: 1.7vh;
+  font-weight: bold;
+}
+
+.legendHighestPercent {
+  position: absolute;
+  z-index: 1000;
+  left: 82%;
+  top: 60%;
+  color: white;
+  text-shadow: 2px 2px #3b3b3b;
+  font-size: 1.7vh;
   font-weight: bold;
 }
 
@@ -148,8 +150,8 @@ body {
   position: absolute;
   z-index: 1000;
   margin: 0 auto;
-  width: 85%;
-  left: 7.5%;
+  width: 60%;
+  left: 20%;
   height: 50%;
   bottom: 5%;
   border-radius: 3px;
@@ -159,8 +161,8 @@ body {
 .gradientPerCapita {
   position: absolute;
   z-index: 1000;
-  width: 85%;
-  left: 7.5%;
+  width: 60%;
+  left: 20%;
   height: 50%;
   bottom: 5%;
   border-radius: 3px;
@@ -171,8 +173,8 @@ body {
   position: absolute;
   z-index: 1000;
   margin: 0 auto;
-  width: 85%;
-  left: 7.5%;
+  width: 60%;
+  left: 20%;
   height: 50%;
   bottom: 5%;
   border-radius: 3px;
@@ -183,8 +185,8 @@ body {
   position: absolute;
   z-index: 1000;
   margin: 0 auto;
-  width: 85%;
-  left: 7.5%;
+  width: 60%;
+  left: 20%;
   height: 50%;
   bottom: 5%;
   border-radius: 3px;
